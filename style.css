@@ -127,15 +127,25 @@ nav a:hover {
 .footer p {
     margin: 5px 0;
 }
-/* Mobile Responsive Fix */
 @media (max-width: 768px) {
-  .menu-cards, .cards, .container {
+  /* Ye aapka purana wala hai - rehne do */
+  .menu-cards, .cards {
     flex-direction: column !important;
     align-items: center !important;
   }
-  .card, .menu-card {
+  .card {
     width: 90% !important;
-    max-width: 350px !important;
     margin-bottom: 20px !important;
+  }
+
+  /* Ye naya wala - Nav ke liye - isko add karo */
+  header, nav, .navbar {
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
+  }
+  
+  .reserve-btn, button {
+    margin-top: 10px !important;
   }
 }
