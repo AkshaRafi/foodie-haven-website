@@ -127,16 +127,26 @@ nav a:hover {
 .footer p {
     margin: 5px 0;
 }
-@media (max-width: 768px) {
-  .menu-cards, .cards {
-    flex-direction: column;
-    align-items: center;
+/* Header Mobile Fix - Sirf header ke liye */
+@media screen and (max-width: 768px) {
+  header {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 20px 10px !important;
+    gap: 15px !important;
   }
-  .card {
-    width: 90% !important;
-    margin-bottom: 20px;
+  header nav, header .nav, header div:nth-child(2) {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    gap: 15px !important;
   }
-  nav {
-    flex-direction: column;
+  header nav a, header a {
+    margin: 5px !important;
+  }
+  .reserve, .Reserve, button {
+    margin-top: 10px !important;
   }
 }
